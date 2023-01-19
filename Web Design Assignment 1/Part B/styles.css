@@ -1,0 +1,89 @@
+body {
+    background: rgb(62, 60, 60);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  
+  header {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5JdmgF5nfePhbcooSJO0UKABa4fIalc0bYA&usqp=CAU");
+    background-size: 80%;
+    background-position: center;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header a {
+    color: rgb(245, 242, 240);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+  }
+  
+  #header:hover{
+    cursor: pointer;
+    border-radius: 25px;
+   
+}
+a:hover {
+    color: rgb(51, 230, 83);
+}
+a:visited{
+  color: rgb(0, 0, 0);;
+}
+  
+  
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; /* used this to remove bullets*/
+}
+
+nav li {
+  display: inline-block;/*to get all one after other*/
+  margin-right: 20px;
+}
+
+ 
+  
+  .features {
+    background: rgb(144, 209, 239);
+    color: rgb(251, 246, 246);
+    padding: 10px;
+    display: flex;
+    flex-direction: row; /*so it can be in line*/
+      padding-top: 37px;
+}
+
+  
+  .features figure {
+    margin: auto;
+    text-align: center; /* for fig ka text in center */
+    text-transform: uppercase; /*for uppercase*/
+    width: 200px;
+  }
+  
+  .features figure img {
+    border: 10px solid white;
+    border-radius: 20%;
+    box-shadow: gray 0 0 10px;
+    width: 170px;
+  }
+  .button{
+    color: #716005;
+    padding: 8px;
+  }
+
+  
+  footer {
+    background: rgb(73, 232, 187);
+    color:rgb(196, 63, 63);
+    font-size: 12px;
+    padding: 20px 20px;
+    text-align: center;
+  }
+  
