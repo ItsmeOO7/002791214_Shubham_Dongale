@@ -1,0 +1,59 @@
+
+# Portfolio
+
+Hey here is my first Portfolio website.
+
+
+
+## HTML Tags
+<!DOCTYPE> 	Defines the document type
+<html>    	Defines the root of an HTML document
+<head>	    Contains metadata/information for the document
+<title>     Gives title to document
+<style>  	Give style to whole screen (part A is internal css)
+<link>  	Defines the relationship between a document and an external resource 
+<body>	    Defines body
+<header>    Defines a header
+<nav>	    Defines navigation links
+<ul>	    Unordered list
+<li>	    Defines a list item
+<section>   Defines a section
+<img>	    Defines an image
+<figure>    Specifies self-contained content
+<figcaption>Defines a caption for a <figure> element
+<a>      	Defines a hyperlink
+<h1>        html heading
+<h2>        Html heading heirarchy less than h1
+<h3>        Html heading hierarchy less than h2
+<footer>	Defines a footer
+<button>	Defines a clickable button
+<br>        Line Break
+<script>    Defines a client-side script
+<p>         paragraph Tag
+<meta>      Defines metadata about an HTML document
+## Some css
+list-style-type: none; : used this to remove bullets of list(<li>)
+flex-direction: coloumn; :so it can be in line 
+text-align: center; :for fig text to be centered
+justify-content:center; to be in center
+border-radius: 30px; ; rounder borders
+position: fixed; for fixed position of logo
+position: absolute; for smaller device so logo can be in right position
+## Authors
+
+- Shubham Dongale
+
+## Color Reference
+
+| Color          
+ Black
+ whitesmoke
+#b2c38
+rgb(251, 149, 7)
+#481002
+rgb(46, 50, 179)
+
+## unique
+Made logo using pixlr
+Also made images of same size using pixlr
+Made it responsive

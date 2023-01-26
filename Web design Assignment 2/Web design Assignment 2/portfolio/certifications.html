@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Portfolio
+        </title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/.png" href="man.png">
+    <meta charset="UTF-8" />
+    <style>
+        body{
+            background-color: rgb(4, 4, 4);
+        }
+    div.gallery {
+        border: 1px solid #ccc;
+      }
+      
+      div.gallery:hover {
+        border: 9px solid rgb(49, 181, 222);
+      }
+      
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+      
+      div.desc {
+        background-color: darkblue;
+        width: 3a00px;
+        height: 150px;
+        padding: 15px;
+        border: 1px solid;
+        overflow: scroll;
+        color: aliceblue;
+        text-align: justify;
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+      }
+      
+      @media only screen and (max-width: 1000px) {
+        .responsive {
+          width: 49.99999%;
+          margin: 6px 0;
+        }
+      }
+      
+      @media only screen and (max-width: 1000px) {
+        .responsive {
+          width: 100%;
+        }
+      }
+      
+      .clearfix:after {
+        content:"";
+        display: table;
+        clear: both;
+      }
+    
+</style>
+    </head>
+<body>
+
+<h2>Responsive Image Gallery</h2>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="internship.jpeg">
+      <img src="internship.jpeg" alt="internship" width="600" height="400">
+    </a>
+    <div class="desc">Internship completion certificate<br>
+      Internship in Machine Learning with Artificial Intelligence & IOT Using AWS <br>
+    My project was to understand components of a machine learning algorithm.
+    </div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="java cert .png">
+      <img src="java cert .png" alt="java" width="600" height="400">
+    </a>
+    <div class="desc">Java Course completion certificate<br>
+    During my final year of undergrad i had completed java course even created application for public transport of hometown.</div>
+  </div>
+</div>
+
+<footer id="contact-me">
+    <h2>Contact me</h2>
+    <p><a href="mailto:asainkar@gmail.com">shubhamd165@gmail.com</a></p>
+    <p><a href="tel:+917387382166">+91 9130203305</a></p>
+</footer>
+</body>
+</html>
+
+
