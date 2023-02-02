@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<!-- Also read chapter 9 from slides - Regular Expressions -->
+
+<html>
+<head>
+	<title>Table CheckList</title>
+	<link rel="stylesheet" type="text/css" href="table.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="down.png">
+	
+</head>
+<body>
+	<table id="myTable">
+		<tr>
+			<th></th>
+			<th>STUDENT</th>
+			<th>ADVISOR</th>
+			<th>AWARD<br/>STATUS</th>
+			<th>SEMESTER</th>
+			<th>TYPE</th>
+			<th>BUDGET<br />#</th>
+			<th>PERCENTAGE</th>
+			<th id="editCol" class="edit">EDIT</th>
+			<th id="delCol" class="delete">DELETE</th>
+		</tr>
+		<tr id="1">
+			<td><input type="checkbox" onclick="rowSelect(this)"/><br /><br /><img src="down.png" width="25px" onclick="showHiddenRow(this)" value="no" /></td>
+			<td>Student 1</td>
+			<td>Teacher 1</td>
+			<td>Approved</td>
+			<td>Fall</td>
+			<td>TA</td>
+			<td>18259</td>
+			<td>100%</td>
+			<td class="edit"><button id="btnEdit" onclick="editRow(this)">Edit</button></td>
+			<td class="delete"><button id="btnDelete" onclick="delRow(this)">Delete</button></td>
+		</tr>
+		<tr class="dropDownTextArea" style="display:none">
+			<td colspan="8">
+			Advisor:<br /><br />
+			Award Details<br />
+			Summer 1-2014(TA)<br />
+			Budget Number: <br />
+			Tuition Number: <br />
+			Comments:<br /><br /><br />
+			Award Status:<br /><br /><br />
+			</td>
+		</tr>
+		<tr id="2">
+			<td><input type="checkbox" onclick="rowSelect(this)"/><br /><br /><img src="down.png" width="25px" onclick="showHiddenRow(this)" value="no" /></td>
+			<td>Student 2</td>
+			<td>Teacher 2</td>
+			<td>Approved</td>
+			<td>Fall</td>
+			<td>TA</td>
+			<td>24829</td>
+			<td>100%</td>
+			<td class="edit"><button id="btnEdit" onclick="editRow(this)">Edit</button></td>
+			<td class="delete"><button id="btnDelete" onclick="delRow(this)">Delete</button></td>
+		</tr>
+		<tr class="dropDownTextArea" style="display:none"><td colspan="8">
+			Advisor:<br /><br />
+			Award Details<br />
+			Summer 1-2014(TA)<br />
+			Budget Number: <br />
+			Tuition Number: <br />
+			Comments:<br /><br /><br />
+			Award Status:<br /><br /><br />
+		</td></tr>
+		<tr id="3">
+			<td><input type="checkbox" onclick="rowSelect(this)"/><br /><br /><img src="down.png" width="25px" onclick="showHiddenRow(this)" value="no" /></td>
+			<td>Student 3</td>
+			<td>Teacher 3</td>
+			<td>Approved</td>
+			<td>Fall</td>
+			<td>TA</td>
+			<td>37498</td>
+			<td>100%</td>
+			<td class="edit"><button id="btnEdit" onclick="editRow(this)">Edit</button></td>
+			<td class="delete"><button id="btnDelete" onclick="delRow(this)">Delete</button></td>
+		</tr>
+		<tr class="dropDownTextArea" style="display:none"><td colspan="8">
+			Advisor:<br /><br />
+			Award Details<br />
+			Summer 1-2014(TA)<br />
+			Budget Number: <br />
+			Tuition Number: <br />
+			Comments:<br /><br /><br />
+			Award Status:<br /><br /><br />
+		</td></tr>
+	</table>
+	<br /><br />
+	<button id="button" type="submit" class="submit" disabled="disabled">SUBMIT SELECTED AWARDS</button>
+	<button id="add" onclick=" addStudent()">Add New Student</button>
+	<nav class="socialmediaicons"></nav>
+	<script src="script.js"></script>
+	
+</body>
+</html>
