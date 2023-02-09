@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Feedback</title>
+  <style>
+    label {	float: left;
+			width: 150px;}
+      #container{
+          width: 1000px;
+          margin: auto;
+          background-color: beige;
+      } 
+      main{
+          padding: 50px;
+      }
+	  table {
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+        }
+        th {
+            text-align: left;
+        }
+
+		#addLiveOthers{
+    	display: none;
+	}
+
+  </style>
+ </head>
+ <body>
+ <div id="container">
+	 
+	 <main>
+		<h2>Feeback</h2>
+		<h3>Love something? Hate something? Let us know!</h3>
+			Note : Fields marked with an asterisk(*) are mandatory
+			<br><br>
+			<form method="post" novalidate id="myForm">
+			   <label>Title*:</label>
+			   <input type="radio" name="title" id="miss" value="miss" required="required"/>Miss
+			   <input type="radio" name="title" id="mr" value="mr" required="required"/>Mr.
+			   <input type="radio" name="title" id="mrs" value="mrs" required="required"/>Mrs.
+			   <br><br>
+			   <label for="firstName">First Name*:</label>
+			   <input type="text" name="firstName" id="firstName" placeholder="First Name" />	
+			   <br><br>
+   
+			   <div id="error_firstName" style="display:none; color:red;">
+				   Invaild input for First Name feild.Only text are allowed.
+			   </div>
+			   
+   
+			   <label for="lastName">Last Name*:</label>
+			   <input type="text" name="lastName" id="lastName" placeholder="Last Name" />
+			   <br><br>
+   
+			   <div id="error_lastName" style="display:none; color:red;">
+				   Invaild input for last Name feild.Only text are allowed.
+			   </div>
+   
+			   <div id="radioButtonDisplay"></div>
+			   
+			   <label for="emailId">Email Id*:</label>
+			   <input type="text" name="emailId" id="emailId" placeholder="yourname@domain.com" />
+			   <br><br>
+   
+			   <div id="error_emailId" style="display:none; color:red;">
+				   Invaild input for emailId feild.Only @northeastern.edu are allowed.
+			   </div>
+   
+			   <label for="phoneNumber">Phone Number*:</label>
+			   <input type="text" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx" />
+			   <br><br>
+   
+			   <div id="error_phoneNumber" style="display:none; color:red;">
+				   Invaild input for phoneNumber feild.Please enter valid ID.
+			   </div>
+   
+			   <label for="streetAddress1">Street Address 1*:</label>
+			   <input type="text" name="streetAddress1" id="streetAddress1" placeholder="address" />
+			   <br><br>
+   
+			   <div id="error_streetAddress1" style="display:none; color:red;">
+				   Invaild input for Street Address feild.Please enter valid Address.
+			   </div>
+   
+			   <label for="streetAddress2">Street Address 2:</label>
+			   <input type="text" name="streetAddress2" id="streetAddress2" placeholder="address" />
+			   <br><br>
+   
+			   <div id="error_streetAddress2" style="display:none; color:red;">
+				   Invaild input for Street Address feild.Please enter valid Address.
+			   </div>
+			   <br>
+   
+			   <label for="city">City*:</label>
+			   <input type="text" name="city" id="city" placeholder="city" />
+			   <br><br>
+   
+			   <div id="error_city" style="display:none; color:red;">
+				   Invaild input for city feild.Please enter valid City Detail.
+			   </div>
+   
+   
+			   <label for="state">State*:</label>
+			   <input type="text" name="state" id="state" placeholder="state" />
+			   <br><br>
+			   <div id="error_state" style="display:none; color:red;">
+				   Invaild input for city feild.Please enter valid State Detail.
+			   </div>
+	   
+			   <label for="zipcode">ZipCode*:</label>
+			   <input type="text" name="zipcode" id="zipcode" placeholder="xxxxxx" />
+			   <br><br>
+   
+			   
+			   <div id="error_zipcode" style="display:none; color:red;">
+				   Invaild input for Zipcode feild.Please enter Zipcode.
+			   </div>
+   
+			   
+				
+   
+				
+			   <label for="aboutUs" id="aboutUs">How did you hear*:</label>
+			   <input type='checkbox' name="source" value="facebook" /> Facebook
+			   <input type='checkbox' name="source" value="google" /> Google
+			   <input type='checkbox' name="source" value="yelp" /> Yelp 
+			   <br><br> 
+   
+			   <select name="job" id="color" onchange='checkvalue(this.value)'> 
+				   <option>pick a option</option>  
+				   <option value="blue">blue</option>
+				   <option value="red">red</option>
+				   <option value="green">green</option>
+				   <option value="yellow">yellow</option>
+				   <option value="white">white</option>
+				 </select>
+				 <br><br>
+				 <div id="blue" name="job" style="display:none;">
+				   <label><input type="radio" name="blueradio" onclick="ShowHideDiv()" id="byesid" value="Light"> Light Blue </label>
+				   <div id="dvtext9" style="display: none">
+					   Text Box:
+					   <input type="text" id="txtBox" value="Light Blue" />
+				   </div>
+				   <label><input type="radio" name="blueradio" onclick="ShowHideDiv()" id="bnoid" value="Dark"> Dark Blue</label>
+				   <div id="dvtext8" style="display: none">
+					   Text Box:
+					   <input type="text" id="txtBox" value="Dark Blue" />
+				   </div>
+			   </div>
+   
+			   <div id="red" name="job" style="display:none;">
+				   <label><input type="radio" name="redradio" onclick="ShowHideDiv()" id="ryesid" value="Light"> Light Red </label>
+				   <div id="dvtext7" style="display: none">
+					   Text Box:
+					   <input type="text" id="txtBox" value="Light Red" />
+				   </div>
+				   <label><input type="radio" name="redradio" onclick="ShowHideDiv()" id="rnoid" value="Dark"> Dark Red</label>
+				   <div id="dvtext6" style="display: none">
+					   Text Box:
+					   <input type="text" id="txtBox" value="Dark Red" />
+				   </div>
+			   </div>
+				 
+				 <div id="green" name="job" style="display:none;">
+					 <label><input type="radio" name="greenradio" onclick="ShowHideDiv()" id="gyesid" value="Light"> Light Green </label>
+					 <div id="dvtext5" style="display: none">
+					   Text Box:
+					   <input type="text" id="txtBox" value="Light Green" />
+				   </div>
+					 <label><input type="radio" name="greenradio" onclick="ShowHideDiv()" id="gnoid" value="Dark"> Dark Green</label>
+					 <div id="dvtext4" style="display: none">
+					   Text Box:
+					   <input type="text" id="txtBox" value="Dark Green" />
+				   </div>
+				 </div>
+				 
+			   <div id="yellow" name="job" style="display:none;">
+				   <label><input type="radio" name="yellowradio" onclick="ShowHideDiv()" id="yyesid" value="Light"> Light Yellow </label>
+				   <div id="dvtext3" style="display: none">
+					   Text Box:
+					   <input type="text" id="txtBox" value="Light Yellow" />
+				   </div>
+				   <label><input type="radio" name="yellowradio" onclick="ShowHideDiv()" id="ynoid" value="Dark"> Dark Yellow</label>
+				   <div id="dvtext2" style="display: none">
+					   Text Box:
+					   <input type="text" id="txtBox" value="Dark Yellow" />
+				   </div>
+			   </div>
+   
+			   <div id="white" name="job" style="display:none;">
+				   <label><input type="radio" name="whiteradio" onclick="ShowHideDiv()" id="wyesid" value="Light"> Soft White </label>
+				   <div id="dvtext1" style="display: none">
+					   Text Box:
+					   <input type="text" id="txtBox" value="Soft White" />
+				   </div>
+				   <label><input type="radio" name="whiteradio" onclick="ShowHideDiv()" id="wnoid" value="Dark"> White Gold</label>
+				   <div id="dvtext" style="display: none">
+					   <br><br>
+					   Text Box:
+					   <input type="text" id="txtBox" value="White Gold" />
+					   <br><br>
+				   </div>
+			   </div>
+   
+   <br><br>
+			   
+			   <label for="comments">Comments*:</label>
+			   <textarea name="text" id="comments" placeholder="Your comments" rows="5" cols="25"></textarea>
+			   <br><br>
+			   <input type="Submit" id="Submit">
+			   <input type="Reset">
+			   <br><br>
+			</form>
+			<br><br>
+			<h2>Table with Collapsed Borders</h2>
+	   <table id="displayingUserInput">
+		   <tr>
+			   <th>FirstName</th>
+			   <th>LastName</th>
+			   <th>EmailId</th>
+			   <th>Phone</th>
+			   <th>StreetAddress1</th>
+			   <th>StreetAddress2</th>
+			   <th>City</th>
+			   <th>State</th>
+			   <th>Zipcode</th>
+			   
+		   </tr>
+   
+	   </table>
+	 </main>
+ </div>
+
+ <script src="script.js">
+ 
+ </script>
+
+ </body>
+</html>
